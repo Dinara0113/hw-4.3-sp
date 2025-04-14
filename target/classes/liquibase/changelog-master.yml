@@ -1,3 +1,11 @@
 databaseChangeLog:
   - include:
       file: liquibase/scripts/users.sql
+  - include:
+      file: liquibase/index-practice/create-student-table.yml
+  - include:
+      file: liquibase/index-practice/index-student-name.yml
+  - include:
+      file: liquibase/index-practice/create-faculty-table.yml
+  - include:
+      file: liquibase/index-practice/index-faculty-name-color.yml
