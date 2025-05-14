@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-faculty-table
+      author: dallanazarova
+      changes:
+        - createTable:
+            tableName: faculty
+            columns:
+              - column:
+                  name: id
+                  type: SERIAL
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: TEXT
+              - column:
+                  name: color
+                  type: TEXT

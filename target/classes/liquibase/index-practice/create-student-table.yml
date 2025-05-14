@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-student-table
+      author: dallanazarova
+      changes:
+        - createTable:
+            tableName: student
+            columns:
+              - column:
+                  name: id
+                  type: SERIAL
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: TEXT
+              - column:
+                  name: age
+                  type: INTEGER
